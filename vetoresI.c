@@ -1,10 +1,10 @@
-#include "vetores.h"
+#include "vetoresI.h"
 #include "basics.h"
 
-void criaVetor(int** aux, int tam){
+void criaVetorI(int** aux, int tam){
     (*aux)=malloc(tam*sizeof(int));
 }
-void preencheVetor(int* vetor,int tam){
+void preencheVetorI(int* vetor,int tam){
     int valor;
     for(int i=0; i<tam; i++){
         printf("elemento[%d]: ", i+1);
@@ -12,35 +12,34 @@ void preencheVetor(int* vetor,int tam){
         vetor[i]=valor;
     }
 }
-void exibeVetor(int* vetor, int tam){
-    printf("Vetor = ");
+void exibeVetorI(int* vetor, int tam, char nome[10]){
+    printf("Vetor (%s) = ", nome);
     for(int i=0; i<tam; i++) printf("%d ", vetor[i]);
     printf("\n");
 }
-void adeusVetor(int* vetor){
+void adeusVetorI(int* vetor){
     free(vetor);
 }
 
-int uniaoUnica(int *A, int n, int *B, int m, int *C){
+int uniaoUnicaI(int *A, int n, int *B, int m, int *C){
     int aux=1;
     C=realloc(C,(aux)*sizeof(int));
     C[0]=A[0];
     for (int i = 0, j=0; i < n, j<m; i++, j++)
     {
-        if(!(contido(A[i], C, aux))){
+        if(!(contidoI(A[i], C, aux))){
             C=realloc(C,(++aux)*sizeof(int));
             C[aux-1]=A[i];
         }
-        if(!(contido(B[j], C, aux))){
+        if(!(contidoI(B[j], C, aux))){
             C=realloc(C,(++aux)*sizeof(int));
             C[aux-1]=B[j];
         }
     }
-    // printf("Aux: %d\n\n", aux);
     return aux;
 }
 
-int contido(int elemento, int *vetor, int tam){
+int contidoI(int elemento, int *vetor, int tam){
     for(int x=0;x<tam; x++){
         if (vetor[x]==elemento) return True;
     }
