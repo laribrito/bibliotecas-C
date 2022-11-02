@@ -14,3 +14,11 @@ void pausa(){
     printf("\nAperte [ENTER] para continuar\n");
     limpaBufferEntrada();
 }
+
+int recebeOpcInt(){
+    int opc;
+    printf(" > ");
+    scanf("%d", &opc);
+    limpaBufferEntrada();
+    return opc;
+}

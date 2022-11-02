@@ -24,7 +24,7 @@ void adeusVetorF(float* vetor){
     free(vetor);
 }
 
-float uniaoUnicaF(float *A, int n, float *B, int m, float *C){
+int uniaoUnicaF(float *A, int n, float *B, int m, float *C){
     int aux=1;
     C=realloc(C,(aux)*sizeof(float));
     C[0]=A[0];
@@ -42,7 +42,7 @@ float uniaoUnicaF(float *A, int n, float *B, int m, float *C){
     return aux;
 }
 
-float contidoF(float elemento, float *vetor, int tam){
+int contidoF(float elemento, float *vetor, int tam){
     for(int x=0;x<tam; x++){
         if (vetor[x]==elemento) return True;
     }
