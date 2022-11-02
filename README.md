@@ -4,7 +4,7 @@
 # Bibliotecas C
 
 <div>
-    <img src='https://img.shields.io/static/v1?label=status&message=Sempre_em_construção&color=informational&style=flat-square'>
+    <img src='https://img.shields.io/badge/status-Sempre%20em%20constru%C3%A7%C3%A3o-blue'>
 </div>
 </div>
 
