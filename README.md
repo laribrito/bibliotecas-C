@@ -3,10 +3,13 @@
 
 # Bibliotecas C
 
+Motivadas por estudos e atividades da faculdade
+
 <div>
     <img src='https://img.shields.io/badge/status-Sempre%20em%20constru%C3%A7%C3%A3o-blue'>
 </div>
 </div>
+
 
 ## Bibliotecas disponíveis
 
