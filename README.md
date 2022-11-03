@@ -18,6 +18,7 @@ Motivadas por estudos e atividades da faculdade
 + VetoresI - manipulação de vetores de números inteiros
 + VetoresF - manipulação de vetores de números floats
 + MatrizesI - manipulação de matrizes de números inteiros
++ ListaEncadI - implementação e manipulação de lista encadeada para números inteiros
 
 ## Bibliotecas futuras
 + MatrizesF - manipulação de matrizes de números floats
